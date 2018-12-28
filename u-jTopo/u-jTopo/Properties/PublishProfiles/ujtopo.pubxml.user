@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\U-Lab\u-jTopo\release</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="about.html">
+      <publishTime>12/28/2018 14:38:49</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/u-jTopo.dll">
+      <publishTime>12/28/2018 14:43:02</publishTime>
+    </File>
+    <File Include="Content/AdminLTE.css">
+      <publishTime>12/26/2018 14:49:03</publishTime>
+    </File>
+    <File Include="Content/AdminLTE.min.css">
+      <publishTime>12/26/2018 14:49:03</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>12/26/2018 14:40:45</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>12/26/2018 14:40:45</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>12/26/2018 14:40:45</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>12/26/2018 14:40:45</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>12/26/2018 14:40:45</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>12/26/2018 14:40:45</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>12/26/2018 14:40:45</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>12/26/2018 14:40:45</publishTime>
+    </File>
+    <File Include="Content/font-awesome.css">
+      <publishTime>12/26/2018 15:07:29</publishTime>
+    </File>
+    <File Include="Content/font-awesome.min.css">
+      <publishTime>12/26/2018 15:07:29</publishTime>
+    </File>
+    <File Include="Content/img/icheck/aero%402x.png">
+      <publishTime>12/26/2018 15:30:07</publishTime>
+    </File>
+    <File Include="Content/img/icheck/aero.png">
+      <publishTime>12/26/2018 15:30:07</publishTime>
+    </File>
+    <File Include="Content/img/icheck/blue%402x.png">
+      <publishTime>12/26/2018 15:30:07</publishTime>
+    </File>
+    <File Include="Content/img/icheck/blue.png">
+      <publishTime>12/26/2018 15:30:07</publishTime>
+    </File>
+    <File Include="Content/img/icheck/green%402x.png">
+      <publishTime>12/26/2018 15:30:07</publishTime>
+    </File>
+    <File Include="Content/img/icheck/green.png">
+      <publishTime>12/26/2018 15:30:07</publishTime>
+    </File>
+    <File Include="Content/img/icheck/grey%402x.png">
+      <publishTime>12/26/2018 15:30:07</publishTime>
+    </File>
+    <File Include="Content/img/icheck/grey.png">
+      <publishTime>12/26/2018 15:30:07</publishTime>
+    </File>
+    <File Include="Content/img/icheck/minimal%402x.png">
+      <publishTime>12/26/2018 15:30:07</publishTime>
+    </File>
+    <File Include="Content/img/icheck/minimal.png">
+      <publishTime>12/26/2018 15:30:07</publishTime>
+    </File>
+    <File Include="Content/img/icheck/orange%402x.png">
+      <publishTime>12/26/2018 15:30:07</publishTime>
+    </File>
+    <File Include="Content/img/icheck/orange.png">
+      <publishTime>12/26/2018 15:30:07</publishTime>
+    </File>
+    <File Include="Content/img/icheck/pink%402x.png">
+      <publishTime>12/26/2018 15:30:07</publishTime>
+    </File>
+    <File Include="Content/img/icheck/pink.png">
+      <publishTime>12/26/2018 15:30:07</publishTime>
+    </File>
+    <File Include="Content/img/icheck/purple%402x.png">
+      <publishTime>12/26/2018 15:30:07</publishTime>
+    </File>
+    <File Include="Content/img/icheck/purple.png">
+      <publishTime>12/26/2018 15:30:07</publishTime>
+    </File>
+    <File Include="Content/img/icheck/red%402x.png">
+      <publishTime>12/26/2018 15:30:07</publishTime>
+    </File>
+    <File Include="Content/img/icheck/red.png">
+      <publishTime>12/26/2018 15:30:07</publishTime>
+    </File>
+    <File Include="Content/img/icheck/yellow%402x.png">
+      <publishTime>12/26/2018 15:30:07</publishTime>
+    </File>
+    <File Include="Content/img/icheck/yellow.png">
+      <publishTime>12/26/2018 15:30:07</publishTime>
+    </File>
+    <File Include="Content/plugins/colorpicker/colorpicker.css">
+      <publishTime>12/27/2018 16:49:15</publishTime>
+    </File>
+    <File Include="Content/plugins/colorpicker/img/alpha.png">
+      <publishTime>12/27/2018 16:49:15</publishTime>
+    </File>
+    <File Include="Content/plugins/colorpicker/img/hue.png">
+      <publishTime>12/27/2018 16:49:15</publishTime>
+    </File>
+    <File Include="Content/plugins/colorpicker/img/saturation.png">
+      <publishTime>12/27/2018 16:49:15</publishTime>
+    </File>
+    <File Include="Content/plugins/icheck/aero.css">
+      <publishTime>12/26/2018 15:26:11</publishTime>
+    </File>
+    <File Include="Content/plugins/icheck/aero.min.css">
+      <publishTime>12/26/2018 15:26:11</publishTime>
+    </File>
+    <File Include="Content/plugins/icheck/blue.css">
+      <publishTime>12/26/2018 15:26:11</publishTime>
+    </File>
+    <File Include="Content/plugins/icheck/blue.min.css">
+      <publishTime>12/26/2018 15:26:11</publishTime>
+    </File>
+    <File Include="Content/plugins/icheck/green.css">
+      <publishTime>12/26/2018 15:26:11</publishTime>
+    </File>
+    <File Include="Content/plugins/icheck/green.min.css">
+      <publishTime>12/26/2018 15:26:11</publishTime>
+    </File>
+    <File Include="Content/plugins/icheck/grey.css">
+      <publishTime>12/26/2018 15:26:11</publishTime>
+    </File>
+    <File Include="Content/plugins/icheck/grey.min.css">
+      <publishTime>12/26/2018 15:26:11</publishTime>
+    </File>
+    <File Include="Content/plugins/icheck/minimal.css">
+      <publishTime>12/26/2018 15:26:11</publishTime>
+    </File>
+    <File Include="Content/plugins/icheck/minimal.min.css">
+      <publishTime>12/26/2018 15:26:11</publishTime>
+    </File>
+    <File Include="Content/plugins/icheck/orange.css">
+      <publishTime>12/26/2018 15:26:11</publishTime>
+    </File>
+    <File Include="Content/plugins/icheck/orange.min.css">
+      <publishTime>12/26/2018 15:26:11</publishTime>
+    </File>
+    <File Include="Content/plugins/icheck/pink.css">
+      <publishTime>12/26/2018 15:26:11</publishTime>
+    </File>
+    <File Include="Content/plugins/icheck/pink.min.css">
+      <publishTime>12/26/2018 15:26:11</publishTime>
+    </File>
+    <File Include="Content/plugins/icheck/purple.css">
+      <publishTime>12/26/2018 15:26:11</publishTime>
+    </File>
+    <File Include="Content/plugins/icheck/purple.min.css">
+      <publishTime>12/26/2018 15:26:11</publishTime>
+    </File>
+    <File Include="Content/plugins/icheck/red.css">
+      <publishTime>12/26/2018 15:26:11</publishTime>
+    </File>
+    <File Include="Content/plugins/icheck/red.min.css">
+      <publishTime>12/26/2018 15:26:11</publishTime>
+    </File>
+    <File Include="Content/plugins/icheck/yellow.css">
+      <publishTime>12/26/2018 15:26:11</publishTime>
+    </File>
+    <File Include="Content/plugins/icheck/yellow.min.css">
+      <publishTime>12/26/2018 15:26:11</publishTime>
+    </File>
+    <File Include="Content/skins/skin-black-light.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-black-light.min.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-black.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-black.min.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-blue-light.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-blue-light.min.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-blue.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-blue.min.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-green-light.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-green-light.min.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-green.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-green.min.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-purple-light.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-purple-light.min.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-purple.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-purple.min.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-red-light.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-red-light.min.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-red.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-red.min.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-yellow-light.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-yellow-light.min.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-yellow.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/skin-yellow.min.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/_all-skins.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="Content/skins/_all-skins.min.css">
+      <publishTime>12/26/2018 15:02:01</publishTime>
+    </File>
+    <File Include="designer.html">
+      <publishTime>12/28/2018 14:39:44</publishTime>
+    </File>
+    <File Include="favicon.png">
+      <publishTime>08/24/2018 14:21:27</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.eot">
+      <publishTime>12/26/2018 15:07:29</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.svg">
+      <publishTime>12/26/2018 15:07:29</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.ttf">
+      <publishTime>12/26/2018 15:07:29</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff">
+      <publishTime>12/26/2018 15:07:29</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff2">
+      <publishTime>12/26/2018 15:07:29</publishTime>
+    </File>
+    <File Include="fonts/FontAwesome.otf">
+      <publishTime>12/26/2018 15:07:29</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>12/26/2018 14:40:45</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>12/26/2018 14:40:45</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>12/26/2018 14:40:45</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>12/26/2018 14:40:45</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>12/26/2018 14:40:45</publishTime>
+    </File>
+    <File Include="Images/bg.png">
+      <publishTime>12/28/2018 11:10:23</publishTime>
+    </File>
+    <File Include="Images/ujtopo.png">
+      <publishTime>12/28/2018 14:29:02</publishTime>
+    </File>
+    <File Include="Images/ujtopo/baby-bath-child-tub-.png">
+      <publishTime>12/27/2018 16:33:16</publishTime>
+    </File>
+    <File Include="Images/ujtopo/baby-bath-sets-soap-.png">
+      <publishTime>12/27/2018 16:32:56</publishTime>
+    </File>
+    <File Include="Images/ujtopo/baby-food-eat-feedin.png">
+      <publishTime>12/27/2018 16:33:03</publishTime>
+    </File>
+    <File Include="Images/ujtopo/baby-health-insuranc.png">
+      <publishTime>12/27/2018 16:33:21</publishTime>
+    </File>
+    <File Include="Images/ujtopo/baby-massage-body-ha.png">
+      <publishTime>12/27/2018 16:33:10</publishTime>
+    </File>
+    <File Include="Images/ujtopo/baby-pot-seat-traini.png">
+      <publishTime>12/27/2018 16:36:20</publishTime>
+    </File>
+    <File Include="Images/ujtopo/baby-safety-security.png">
+      <publishTime>12/27/2018 16:36:16</publishTime>
+    </File>
+    <File Include="Images/ujtopo/baby-wipe-cleaning-p.png">
+      <publishTime>12/27/2018 16:36:11</publishTime>
+    </File>
+    <File Include="Images/ujtopo/bath-chair-sit-baby.png">
+      <publishTime>12/27/2018 16:36:26</publishTime>
+    </File>
+    <File Include="Images/ujtopo/bottle-brushes-clean.png">
+      <publishTime>12/27/2018 16:36:31</publishTime>
+    </File>
+    <File Include="Images/ujtopo/changing-table-pad-d.png">
+      <publishTime>12/27/2018 16:36:35</publishTime>
+    </File>
+    <File Include="Images/ujtopo/comb-brush-hair-make.png">
+      <publishTime>12/27/2018 16:36:39</publishTime>
+    </File>
+    <File Include="Images/ujtopo/net-yuan.png">
+      <publishTime>12/28/2018 10:22:18</publishTime>
+    </File>
+    <File Include="Images/weichart.png">
+      <publishTime>12/28/2018 13:57:22</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>12/28/2018 14:40:01</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/26/2018 15:25:14</publishTime>
+    </File>
+    <File Include="Scripts/adminLte/adminlte.js">
+      <publishTime>12/26/2018 14:48:45</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap/bootstrap.js">
+      <publishTime>12/26/2018 14:40:45</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap/bootstrap.min.js">
+      <publishTime>12/26/2018 14:40:45</publishTime>
+    </File>
+    <File Include="Scripts/colorpicker/bootstrap-colorpicker.min.js">
+      <publishTime>12/27/2018 16:48:52</publishTime>
+    </File>
+    <File Include="Scripts/icheck/icheck.js">
+      <publishTime>12/26/2018 15:25:52</publishTime>
+    </File>
+    <File Include="Scripts/icheck/icheck.min.js">
+      <publishTime>12/26/2018 15:25:52</publishTime>
+    </File>
+    <File Include="Scripts/jquery/jquery-1.9.1.js">
+      <publishTime>12/26/2018 14:40:43</publishTime>
+    </File>
+    <File Include="Scripts/jquery/jquery-1.9.1.min.js">
+      <publishTime>12/26/2018 14:40:43</publishTime>
+    </File>
+    <File Include="Scripts/jquery/jquery-1.9.1.min.map">
+      <publishTime>12/26/2018 14:40:43</publishTime>
+    </File>
+    <File Include="Scripts/jquery/jquery-3.1.1.js">
+      <publishTime>12/26/2018 14:41:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery/jquery-3.1.1.min.js">
+      <publishTime>12/26/2018 14:41:28</publishTime>
+    </File>
+    <File Include="Scripts/jTopo/jtopo-0.4.8-min.js">
+      <publishTime>12/26/2018 14:41:28</publishTime>
+    </File>
+    <File Include="Scripts/jTopo/jtopo-0.4.8.js">
+      <publishTime>12/26/2018 14:41:28</publishTime>
+    </File>
+    <File Include="Scripts/jTopo/toolbar.js">
+      <publishTime>12/26/2018 14:41:28</publishTime>
+    </File>
+    <File Include="Scripts/ujtopo/ujtopo.js">
+      <publishTime>12/28/2018 10:40:50</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/28/2018 14:43:03</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ujtopo-显示视图</title>
+    <meta charset="utf-8" />
+    <link rel="Shortcut Icon" href="favicon.png">
+    <link rel="Shortcut Icon" href="favicon.png"> IE地址栏前换成自己的图标
+    <link rel="Bookmark" href="favicon.png"> 可以在收藏夹中显示出你的图标
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b>ujtopo</b></span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><b>ujtopo</b></span>
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span style="line-height:15px;color:white;font-size:20px;">陪伴是最长情的告白</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Messages: style can be found in dropdown.less-->
+                        <li class="dropdown messages-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                基于jTopo的拓扑图设计工具库
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- Sidebar user panel -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="Images/ujtopo/net-yuan.png" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="pull-left info">
+                        <p>net-yuan</p>
+                        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                    </div>
+                </div>
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="treeview active menu-open">
+                        <a href="http://net-yuan.com" target="_blank">
+                            <i class="fa fa-shower"></i> <span>ujtopo</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="http://net-yuan.com" target="_blank"><i class="fa fa-heart"></i> net-yuan主页</a></li>
+                            <li><a href="about.html"><i class="fa fa-cube"></i> ujtopo-简介</a></li>
+                            <li><a href="designer.html"><i class="fa fa-rocket"></i> ujtopo-设计视图</a></li>
+                            <li class="active"><a href="index.html"><i class="fa fa-sitemap"></i> ujtopo-显示视图</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <div class="content-wrapper">
+            <section class="content-header">
+                <ol class="breadcrumb" style="top:3px;">
+                    <li><a href="#"><i class="fa fa-shower"></i> net-yuan</a></li>
+                    <li class="active">ujtopo</li>
+                </ol>
+            </section>
+
+            <section class="content">
+                <div class="row">
+                    <div class="col-md-9">
+                        <!-- Horizontal Form -->
+                        <div class="box box-info">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">ujtopo----显示视图<span id="spSiteName"></span></h3>
+                                <div class="box-tools pull-right hide">
+                                    <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                                </div>
+                                <!-- /.box-tools -->
+                            </div>
+                            <!-- /.box-header -->
+
+                            <div class="box-body chart-responsive" id="topoP">
+                                <div id="ptopo">
+                                    <!--<canvas width="888" height="750" id="canvas" style="background-color: rgb(238, 238, 238); border: 1px solid rgb(68, 68, 68); cursor: default;"></canvas>-->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /. box -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-md-3">
+                        <!-- /. box -->
+                        <div class="box box-primary box-solid">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">ujtopo</h3>
+                                <div class="box-tools pull-right">
+                                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                        <i class="fa fa-minus"></i>
+                                    </button>
+                                </div>
+                                <!-- /.box-tools -->
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <dl id="dt-list-1">
+                                    <dt>ujtopo是基于jTopo的拓扑图设计工具库</dt>
+                                    <dt>1、完全开源免费</dt>
+                                    <dt>2、分为设计视图和显示视图，设计视图中可以选择线形，（直线、折线、反折线，后面还可以增加曲线、二次折线等）、选择线条颜色</dt>
+                                    <dt>3、节点数据增加id和type以及唯一标识uid，可以为不同类型的节点定义不同的行为</dt>
+                                    <dt>4、节点数据和连接数据可以保存</dt>
+                                    <dt>5、可以从数据源读取节点数据和连接数据，解析数据，显示拓扑图形</dt>
+                                    <dt>6、支持告警显示(待扩展)</dt>
+                                </dl>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </section>
+        </div>
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <b>Version</b> 1.0.0
+            </div>
+            <strong>Copyright &copy; 2018 by SmartLife 网缘(<a href="http://net-yuan.com" target="_blank">net-yuan</a>) </strong>
+        </footer>
+    </div>
+</body>
+</html>
+
+<script src="Scripts/jquery/jquery-3.1.1.min.js"></script>
+<script src="Scripts/bootstrap/bootstrap.min.js"></script>
+<script src="Scripts/adminLte/adminlte.js"></script>
+<script src="Scripts/jTopo/jtopo-0.4.8-min.js"></script>
+<script src="Scripts/jTopo/toolbar.js"></script>
+<script src="Scripts/icheck/icheck.min.js"></script>
+<link href="Content/bootstrap.min.css" rel="stylesheet" />
+<link href="Content/AdminLTE.min.css" rel="stylesheet" />
+<link href="Content/skins/_all-skins.min.css" rel="stylesheet" />
+<link href="Content/font-awesome.min.css" rel="stylesheet" />
+<link href="Content/plugins/icheck/blue.min.css" rel="stylesheet" />
+<script src="Scripts/ujtopo/ujtopo.js"></script>
+<script>
+    var jtopo;
+    $(function () {
+        $('input[type="checkbox"], input[type="radio"]').iCheck({
+            checkboxClass: "icheckbox_minimal-blue",
+            radioClass: "iradio_minimal-blue"
+        });
+
+        var wid = $("#topoP").width() - 10;
+        var windowH = $(window).height();
+        var hei = windowH - 200;
+
+        $("#ptopo").append('<canvas width="' + wid + '" height="' + hei + '" id="canvas" style="width:100%;margin-bottom:-5px;  border: 1px solid rgb(68, 68, 68); cursor: default;"></canvas>');
+        intTopo();
+    })
+
+    var intTopo = function () {
+        //var nodeList = [{ "x": 8, "y": 8, "id": 1, "type": 1, "img": "Images/statistics/UPS.png", "title": "", "uid": "j_1" }, { "x": 1106, "y": 710, "id": 2, "type": 1, "img": "Images/statistics/UPS.png", "title": "", "uid": "j_2" }, { "x": 9, "y": 710, "id": 21, "type": 1, "img": "Images/statistics/UPS.png", "title": "", "uid": "j_21" }, { "x": 1103, "y": 9, "id": 22, "type": 1, "img": "Images/statistics/UPS.png", "title": "", "uid": "j_22" }];
+        //var linkList = [{ "lineType": 1, "lineColor": "", "xArgs": { "x": 8, "y": 8, "id": 1, "type": 1, "img": "Images/statistics/UPS.png", "title": "", "uid": "j_1" }, "yArgs": { "x": 9, "y": 710, "id": 21, "type": 1, "img": "Images/statistics/UPS.png", "title": "", "uid": "j_21" } }, { "lineType": 1, "lineColor": "", "xArgs": { "x": 9, "y": 710, "id": 21, "type": 1, "img": "Images/statistics/UPS.png", "title": "", "uid": "j_21" }, "yArgs": { "x": 1106, "y": 710, "id": 2, "type": 1, "img": "Images/statistics/UPS.png", "title": "", "uid": "j_2" } }, { "lineType": 1, "lineColor": "", "xArgs": { "x": 1106, "y": 710, "id": 2, "type": 1, "img": "Images/statistics/UPS.png", "title": "", "uid": "j_2" }, "yArgs": { "x": 1103, "y": 9, "id": 22, "type": 1, "img": "Images/statistics/UPS.png", "title": "", "uid": "j_22" } }, { "lineType": 1, "lineColor": "", "xArgs": { "x": 1103, "y": 9, "id": 22, "type": 1, "img": "Images/statistics/UPS.png", "title": "", "uid": "j_22" }, "yArgs": { "x": 8, "y": 8, "id": 1, "type": 1, "img": "Images/statistics/UPS.png", "title": "", "uid": "j_1" } }];
+
+        var nodeListStr = localStorage.getItem("nodeList");    //获取存储的信息，也是字符串格式
+        var linkListStr = localStorage.getItem("linkList");    //获取存储的信息，也是字符串格式
+        var nodeList = [];
+        var linkList = [];
+
+        if (nodeListStr == null || nodeListStr == undefined) {
+            return;
+        } else {
+            nodeList = JSON.parse(nodeListStr);      //将JSON数据反序列化为对象
+        }
+
+        if (linkListStr == null || linkListStr == undefined) {
+            return;
+        } else {
+            linkList = JSON.parse(linkListStr);      //将JSON数据反序列化为对象
+        }
+
+        var _config = { designer: true };
+        jtopo = new ujtopo(_config);
+        jtopo.init();
+
+        for(let node of nodeList) {
+            jtopo.addNode(node);
+        }
+
+        for(let link of linkList) {
+            var lineType = link.lineType; //线形
+            var lineColor = link.lineColor; //线颜色
+
+            var b_uid = link.xArgs.uid;
+            var e_uid = link.yArgs.uid;
+
+            var beginNode = jtopo.findNode(b_uid);
+            var endNode = jtopo.findNode(e_uid);
+            jtopo.setLineType(lineType);
+            jtopo.setLineColor(lineColor);
+            getLine(beginNode, endNode);
+        }
+    }
+</script>

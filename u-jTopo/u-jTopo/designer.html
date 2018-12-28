@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ujtopo-设计视图</title>
+    <meta charset="utf-8" />
+    <link rel="Shortcut Icon" href="favicon.png">
+    <link rel="Shortcut Icon" href="favicon.png"> IE地址栏前换成自己的图标
+    <link rel="Bookmark" href="favicon.png"> 可以在收藏夹中显示出你的图标
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b>ujtopo</b></span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><b>ujtopo</b></span>
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span style="line-height:15px;color:white;font-size:20px;">陪伴是最长情的告白</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Messages: style can be found in dropdown.less-->
+                        <li class="dropdown messages-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                基于jTopo的拓扑图设计工具库
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- Sidebar user panel -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="Images/ujtopo/net-yuan.png" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="pull-left info">
+                        <p>net-yuan</p>
+                        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                    </div>
+                </div>
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="treeview active menu-open">
+                        <a href="http://net-yuan.com" target="_blank">
+                            <i class="fa fa-shower"></i> <span>ujtopo</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="http://net-yuan.com" target="_blank"><i class="fa fa-heart"></i> net-yuan主页</a></li>
+                            <li><a href="about.html"><i class="fa fa-cube"></i> ujtopo-简介</a></li>
+                            <li class="active"><a href="designer.html"><i class="fa fa-rocket"></i> ujtopo-设计视图</a></li>
+                            <li><a href="index.html"><i class="fa fa-sitemap"></i> ujtopo-显示视图</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <div class="content-wrapper">
+            <section class="content-header">
+                <ol class="breadcrumb" style="top:3px;">
+                    <li><a href="#"><i class="fa fa-shower"></i> net-yuan</a></li>
+                    <li class="active">ujtopo</li>
+                </ol>
+            </section>
+
+            <section class="content">
+                <div class="row">
+                    <div class="col-md-9">
+                        <!-- Horizontal Form -->
+                        <div class="box box-info">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">ujtopo----设计视图<span id="spSiteName"></span></h3>
+                                <div class="box-tools pull-right hide">
+                                    <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                                </div>
+                                <!-- /.box-tools -->
+                            </div>
+                            <!-- /.box-header -->
+
+                            <div class="box-body chart-responsive" id="topoP">
+                                <div id="ptopo">
+                                    <!--<canvas width="888" height="750" id="canvas" style="background-color: rgb(238, 238, 238); border: 1px solid rgb(68, 68, 68); cursor: default;"></canvas>-->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /. box -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-md-3">
+                        <!-- /.box -->
+                        <div class="box box-primary  box-solid">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">设置</h3>
+                                <div class="box-tools pull-right">
+                                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                        <i class="fa fa-minus"></i>
+                                    </button>
+                                </div>
+                                <!-- /.box-tools -->
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <div class="box-body">
+                                    <div class="form-group">
+                                        <label for="selColorpicker">线条颜色</label>
+                                        <input id="selColorpicker" data-color="rgb(0, 128, 0)" data-color-format="rgb" type="text" class="input-small" value="0, 128, 0" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label>选择线形</label>
+                                        <div class="radio">
+                                            <input name="line" class="icheckbox" type="radio" value="1" checked="checked">
+                                            <span class="lbl"> 简单连线</span>
+                                        </div>
+                                        <div class="radio">
+                                            <input name="line" class="icheckbox" type="radio" value="2">
+                                            <span class="lbl"> 折线</span>
+                                            <input name="line" class="icheckbox" type="radio" value="3">
+                                            <span class="lbl"> 反@折线</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                        <div class="box box-primary  box-solid">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">操作</h3>
+                                <div class="box-tools pull-right">
+                                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                        <i class="fa fa-minus"></i>
+                                    </button>
+                                </div>
+                                <!-- /.box-tools -->
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <div>
+                                    <button class="btn btn-info" onclick="saveTopoData();">结果输出</button>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                        <div class="box box-primary box-solid">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">输出</h3>
+                                <div class="box-tools pull-right">
+                                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                        <i class="fa fa-minus"></i>
+                                    </button>
+                                </div>
+                                <!-- /.box-tools -->
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <p style="word-wrap: break-word;word-break:break-all;" id="pResults">暂无结果</p>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </section>
+        </div>
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <b>Version</b> 1.0.0
+            </div>
+            <strong>Copyright &copy; 2018 by SmartLife 网缘(<a href="http://net-yuan.com" target="_blank">net-yuan</a>) </strong>
+        </footer>
+    </div>
+</body>
+</html>
+
+<script src="Scripts/jquery/jquery-3.1.1.min.js"></script>
+<script src="Scripts/bootstrap/bootstrap.min.js"></script>
+<script src="Scripts/adminLte/adminlte.js"></script>
+<script src="Scripts/jTopo/jtopo-0.4.8-min.js"></script>
+<script src="Scripts/jTopo/toolbar.js"></script>
+<script src="Scripts/icheck/icheck.min.js"></script>
+<script src="Scripts/colorpicker/bootstrap-colorpicker.min.js"></script>
+
+<link href="Content/bootstrap.min.css" rel="stylesheet" />
+<link href="Content/AdminLTE.min.css" rel="stylesheet" />
+<link href="Content/skins/_all-skins.min.css" rel="stylesheet" />
+<link href="Content/font-awesome.min.css" rel="stylesheet" />
+<link href="Content/plugins/icheck/blue.min.css" rel="stylesheet" />
+<link href="Content/plugins/colorpicker/colorpicker.css" rel="stylesheet" />
+<script src="Scripts/ujtopo/ujtopo.js"></script>
+<script>
+    var jtopo;
+    $(function () {
+        $('input[type="checkbox"], input[type="radio"]').iCheck({
+            checkboxClass: "icheckbox_minimal-blue",
+            radioClass: "iradio_minimal-blue"
+        });
+        $('#selColorpicker').colorpicker().on('changeColor', function (ev) {
+            var rgbColor = ev.color.toRGB();
+            if (rgbColor != "" && rgbColor != undefined && rgbColor != "undefined") {
+                var strRgbColor = rgbColor.r + "," + rgbColor.g + "," + rgbColor.b;
+                console.log(strRgbColor);
+                if (jtopo != null && jtopo != undefined) {
+                    jtopo.setLineColor(strRgbColor);
+                }
+            }
+        });
+        $('input:radio[name="line"]').on('ifChecked', function (event) {
+            chooseLine();
+        });
+
+        var wid = $("#topoP").width() - 10;
+        var windowH = $(window).height();
+        var hei = windowH - 200;
+
+        $("#ptopo").append('<canvas width="' + wid + '" height="' + hei + '" id="canvas" style="width:100%;margin-bottom:-5px;  border: 1px solid rgb(68, 68, 68); cursor: default;"></canvas>');
+        intTopo();
+    })
+
+    //选择线形
+    var chooseLine = function () {
+        var lineType = $('input:radio[name="line"]:checked').val();
+
+        if (jtopo != null && jtopo != undefined) {
+            jtopo.setLineType(lineType);
+        }
+    }
+
+    var intTopo = function () {
+        var demoData = [
+            { x: 50, y: 60, id: 1, type: 1, img: 'Images/ujtopo/net-yuan.png', title: 'net-yuan' },
+            { x: 50, y: 60, id: 2, type: 1, img: 'Images/ujtopo/baby-bath-child-tub-.png', title: 'babay浴缸' },
+            { x: 50, y: 60, id: 3, type: 1, img: 'Images/ujtopo/baby-bath-sets-soap-.png', title: 'babay肥皂' },
+            { x: 50, y: 60, id: 4, type: 1, img: 'Images/ujtopo/baby-food-eat-feedin.png', title: 'baby辅食' },
+            { x: 50, y: 60, id: 5, type: 1, img: 'Images/ujtopo/baby-health-insuranc.png', title: 'baby医保' },
+            { x: 50, y: 60, id: 6, type: 1, img: 'Images/ujtopo/baby-massage-body-ha.png', title: 'baby按摩身体' },
+            { x: 50, y: 60, id: 7, type: 1, img: 'Images/ujtopo/baby-pot-seat-traini.png', title: 'baby坐便车' },
+            { x: 50, y: 60, id: 8, type: 1, img: 'Images/ujtopo/baby-safety-security.png', title: 'baby安全保障' },
+            { x: 50, y: 60, id: 9, type: 1, img: 'Images/ujtopo/baby-wipe-cleaning-p.png', title: 'baby擦洗盆' },
+            { x: 50, y: 60, id: 10, type: 1, img: 'Images/ujtopo/bath-chair-sit-baby.png', title: 'baby坐浴椅' }
+        ]
+        var _config = { designer: true };
+        jtopo = new ujtopo(_config);
+        jtopo.init();
+        for(var n of demoData) {
+            jtopo.addNode(n);
+        }
+        jtopo.onLineEdit();
+    }
+
+    //保存结点和连线数据
+    var saveTopoData = function () {
+        if (jtopo != undefined) {
+            var nList = jtopo.nodeList;
+            var lList = jtopo.linkList;
+            var onList = [];
+            for (let item of nList) {
+                item.args.x = item.node.x;
+                item.args.y = item.node.y;
+                onList.push(item.args);
+            }
+            var outNList = JSON.stringify(onList);
+            var outLList = JSON.stringify(lList);
+            console.log(outNList);
+            console.log(outLList);
+            $("#pResults").html("结点数据:<br />" + outNList + '<br />连接数据:<br />' + outLList);
+
+            //存储对象
+            localStorage.setItem("nodeList", outNList);  //以字符串格式存储信息
+            localStorage.setItem("linkList", outLList);  //以字符串格式存储信息
+        }
+    }
+</script>

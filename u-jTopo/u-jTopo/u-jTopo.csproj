@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF3A018F-6E42-49FB-9EF1-BCF42ACDFD16}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>u_jTopo</RootNamespace>
+    <AssemblyName>u-jTopo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.html" />
+    <Content Include="Content\plugins\colorpicker\colorpicker.css" />
+    <Content Include="Content\plugins\colorpicker\img\alpha.png" />
+    <Content Include="Content\plugins\colorpicker\img\hue.png" />
+    <Content Include="Content\plugins\colorpicker\img\saturation.png" />
+    <Content Include="favicon.png" />
+    <Content Include="Images\ujtopo.png" />
+    <Content Include="Images\ujtopo\baby-bath-child-tub-.png" />
+    <Content Include="Images\ujtopo\baby-bath-sets-soap-.png" />
+    <Content Include="Images\ujtopo\baby-food-eat-feedin.png" />
+    <Content Include="Images\ujtopo\baby-health-insuranc.png" />
+    <Content Include="Images\ujtopo\baby-massage-body-ha.png" />
+    <Content Include="Images\ujtopo\baby-pot-seat-traini.png" />
+    <Content Include="Images\ujtopo\baby-safety-security.png" />
+    <Content Include="Images\ujtopo\baby-wipe-cleaning-p.png" />
+    <Content Include="Images\ujtopo\bath-chair-sit-baby.png" />
+    <Content Include="Images\ujtopo\bottle-brushes-clean.png" />
+    <Content Include="Images\ujtopo\changing-table-pad-d.png" />
+    <Content Include="Images\ujtopo\comb-brush-hair-make.png" />
+    <Content Include="Images\ujtopo\net-yuan.png" />
+    <Content Include="Images\weichart.png" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\colorpicker\bootstrap-colorpicker.min.js" />
+    <Content Include="Scripts\jquery\jquery-1.9.1.min.map" />
+    <None Include="Properties\PublishProfiles\ujtopo.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\AdminLTE.css" />
+    <Content Include="Content\AdminLTE.min.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\plugins\icheck\aero.css" />
+    <Content Include="Content\plugins\icheck\aero.min.css" />
+    <Content Include="Content\plugins\icheck\blue.css" />
+    <Content Include="Content\plugins\icheck\blue.min.css" />
+    <Content Include="Content\plugins\icheck\green.css" />
+    <Content Include="Content\plugins\icheck\green.min.css" />
+    <Content Include="Content\plugins\icheck\grey.css" />
+    <Content Include="Content\plugins\icheck\grey.min.css" />
+    <Content Include="Content\plugins\icheck\minimal.css" />
+    <Content Include="Content\plugins\icheck\minimal.min.css" />
+    <Content Include="Content\plugins\icheck\orange.css" />
+    <Content Include="Content\plugins\icheck\orange.min.css" />
+    <Content Include="Content\plugins\icheck\pink.css" />
+    <Content Include="Content\plugins\icheck\pink.min.css" />
+    <Content Include="Content\plugins\icheck\purple.css" />
+    <Content Include="Content\plugins\icheck\purple.min.css" />
+    <Content Include="Content\plugins\icheck\red.css" />
+    <Content Include="Content\plugins\icheck\red.min.css" />
+    <Content Include="Content\plugins\icheck\yellow.css" />
+    <Content Include="Content\plugins\icheck\yellow.min.css" />
+    <Content Include="Content\img\icheck\aero%402x.png" />
+    <Content Include="Content\img\icheck\aero.png" />
+    <Content Include="Content\img\icheck\blue%402x.png" />
+    <Content Include="Content\img\icheck\blue.png" />
+    <Content Include="Content\img\icheck\green%402x.png" />
+    <Content Include="Content\img\icheck\green.png" />
+    <Content Include="Content\img\icheck\grey%402x.png" />
+    <Content Include="Content\img\icheck\grey.png" />
+    <Content Include="Content\img\icheck\minimal%402x.png" />
+    <Content Include="Content\img\icheck\minimal.png" />
+    <Content Include="Content\img\icheck\orange%402x.png" />
+    <Content Include="Content\img\icheck\orange.png" />
+    <Content Include="Content\img\icheck\pink%402x.png" />
+    <Content Include="Content\img\icheck\pink.png" />
+    <Content Include="Content\img\icheck\purple%402x.png" />
+    <Content Include="Content\img\icheck\purple.png" />
+    <Content Include="Content\img\icheck\red%402x.png" />
+    <Content Include="Content\img\icheck\red.png" />
+    <Content Include="Content\img\icheck\yellow%402x.png" />
+    <Content Include="Content\img\icheck\yellow.png" />
+    <Content Include="Content\skins\skin-black-light.css" />
+    <Content Include="Content\skins\skin-black-light.min.css" />
+    <Content Include="Content\skins\skin-black.css" />
+    <Content Include="Content\skins\skin-black.min.css" />
+    <Content Include="Content\skins\skin-blue-light.css" />
+    <Content Include="Content\skins\skin-blue-light.min.css" />
+    <Content Include="Content\skins\skin-blue.css" />
+    <Content Include="Content\skins\skin-blue.min.css" />
+    <Content Include="Content\skins\skin-green-light.css" />
+    <Content Include="Content\skins\skin-green-light.min.css" />
+    <Content Include="Content\skins\skin-green.css" />
+    <Content Include="Content\skins\skin-green.min.css" />
+    <Content Include="Content\skins\skin-purple-light.css" />
+    <Content Include="Content\skins\skin-purple-light.min.css" />
+    <Content Include="Content\skins\skin-purple.css" />
+    <Content Include="Content\skins\skin-purple.min.css" />
+    <Content Include="Content\skins\skin-red-light.css" />
+    <Content Include="Content\skins\skin-red-light.min.css" />
+    <Content Include="Content\skins\skin-red.css" />
+    <Content Include="Content\skins\skin-red.min.css" />
+    <Content Include="Content\skins\skin-yellow-light.css" />
+    <Content Include="Content\skins\skin-yellow-light.min.css" />
+    <Content Include="Content\skins\skin-yellow.css" />
+    <Content Include="Content\skins\skin-yellow.min.css" />
+    <Content Include="Content\skins\_all-skins.css" />
+    <Content Include="Content\skins\_all-skins.min.css" />
+    <Content Include="designer.html" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <None Include="Scripts\jquery\jquery-1.9.1.intellisense.js" />
+    <Content Include="Images\bg.png" />
+    <Content Include="index.html" />
+    <Content Include="Scripts\adminLte\adminlte.js" />
+    <Content Include="Scripts\bootstrap\bootstrap.js" />
+    <Content Include="Scripts\bootstrap\bootstrap.min.js" />
+    <Content Include="Scripts\icheck\icheck.js" />
+    <Content Include="Scripts\icheck\icheck.min.js" />
+    <Content Include="Scripts\jquery\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jTopo\jtopo-0.4.8-min.js" />
+    <Content Include="Scripts\jTopo\jtopo-0.4.8.js" />
+    <Content Include="Scripts\ujtopo\ujtopo.js" />
+    <Content Include="Scripts\jTopo\toolbar.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59818</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59818/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
